@@ -910,7 +910,7 @@ body {
 }
 .boxMail .boxMail-container .card2 .card2-content {
     width: 100%;
-    height: auto;
+    height: 100%;
     position: relative;
     background-color: #FF7882;
     transition: all 1s;
