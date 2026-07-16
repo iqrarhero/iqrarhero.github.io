@@ -503,7 +503,7 @@ body {
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 .title__letter .fa-solid{
     margin-left: 5px;
@@ -516,6 +516,7 @@ body {
     display: flex;
     padding-top: 1.5rem;
     padding-bottom: 70px;
+    font-size: clamp(0.9rem, 3vm, 1.3rem);
 }
 .letter__border .letter .content__letter .left{
     position: relative;
