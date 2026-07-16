@@ -2,11 +2,21 @@
 <html lang="en">
 
 <head>
-     <!-- یہ کوڈ آڈیو پلیئر کو بالکل چھپا دے گا اور آٹو پلے کرے گا -->
-<audio autoplay loop style="display:none;">
+     <!-- یہ آڈیو پلیئر سکرین پر بالکل نظر نہیں آئے گا -->
+<audio id="bgAudio" loop style="display:none;">
   <source src="audio/audio1.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
+
+<script>
+  // جیسے ہی وزٹر سکرین پر کہیں بھی پہلا کلک کرے گا، آڈیو چل جائے گی
+  document.addEventListener('click', function() {
+    const audio = document.getElementById('bgAudio');
+    audio.play().catch(function(error) {
+      console.log("Autoplay was prevented, waiting for next interaction.");
+    });
+  }, { once: true }); // یہ 'once: true' اس بات کو یقینی بناتا ہے کہ کلک والا کام صرف پہلی بار ہو
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
@@ -146,8 +156,7 @@
                         <h3>To You!</h3>
                         <h2>"ہیپی برتھ ڈے پگلو! 🥳🎂🥳
 آج کے اس خاص دن پر میری دعا ہے کہ اللہ پاک تمہیں لمبی، صحت تندرستی والی زندگی اور زندگی کے ہر امتحان میں کامیابیاں عطا کرے۔ اللہ پاک تمہاری پیاری امی کا سایہ ہمیشہ تمہارے سر پر سلامت رکھے اور تمہارے دونوں بھائیوں کو ہمیشہ تندرست، خوش اور تمہارا مضبوط سہارا بنا کر رکھے۔
-
-اللہ پاک تمہارے ابو کو جنت الفردوس میں اعلیٰ مقام عطا فرمائے اور ان کی روح کو سکون دے (آمین)۔ تم ہمیشہ مسکراتی رہو، کبھی اداس مت ہونا۔ سالگرہ بہت بہت مبارک ہو! 🎈❤️😌
+🎈❤️😌
                         </h2>
 
                         <div class="imageCute2">
