@@ -516,7 +516,6 @@ body {
     display: flex;
     padding-top: 1.5rem;
     padding-bottom: 70px;
-    font-size: clamp(0.9rem, 3vm, 1.3rem);
 }
 .letter__border .letter .content__letter .left{
     position: relative;
@@ -911,7 +910,7 @@ body {
 }
 .boxMail .boxMail-container .card2 .card2-content {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
     background-color: #FF7882;
     transition: all 1s;
